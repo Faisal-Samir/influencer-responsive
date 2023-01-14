@@ -403,10 +403,12 @@ main {
         margin-top: 10px;
     }
     .feature-product-image img{
-        width: 85%;
+        width: 90%;
     }
     .feature-product-details {
         margin-bottom: 25px;
+        margin-right: 15px;
+        padding-left: 10px;
     }
     .footer {
         margin-top: -25px;
