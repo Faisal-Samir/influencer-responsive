@@ -259,7 +259,7 @@ main {
     text-align: center;
 }
 
-.footer-details{
+.footer-details {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -297,6 +297,83 @@ main {
 
 .footer-logo ul li i {
     margin-right: 16px;
-    width: 32px;
-    height: 32px;
+}
+@media  only screen and (max-width:688px) {
+    .nav-element{
+        display: none;
+    }
+    .nav-title{
+        margin-left: 0;
+    }
+    .navigation-container{
+        padding: 0;
+        justify-content: center;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .banner-section{
+        width: 100%;
+    }
+    main{
+        height: 100%;
+    }
+    header {
+        margin-top: 20px;
+    }
+    .banner-details {
+        margin-top: 0px;
+        text-align: center;
+    }
+    .banner-title{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .sponsor-items{
+        width: 100%;
+    }
+    .sponsor-items ul{
+        display: flex;
+        flex-wrap: wrap;
+        grid-column-gap: 30px;
+        grid-row-gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    .sponsor-items ul li a{
+        margin-bottom: 10px;
+    }
+    .sponsor-items{
+        border: 0;
+    }
+
+    .popular-collection-container {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .see-more{
+        width: 100%;
+        margin-right: 40px;
+    }
+    .see-container{
+        margin-top: 25px;
+    }
+    .feature-product-container{
+        width: 100%;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .feature-product-details{
+        margin-bottom: 25px;
+    }
+    .footer{
+        margin-top: 0px;
+    }
 }
