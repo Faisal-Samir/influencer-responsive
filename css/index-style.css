@@ -87,6 +87,7 @@ main {
     background-position: 0px 20px;
     background-repeat: no-repeat;
     background-size: 100%;
+    text-align: center;
 }
 
 .banner-image img {
@@ -298,43 +299,67 @@ main {
 .footer-logo ul li i {
     margin-right: 16px;
 }
-@media  only screen and (max-width:688px) {
-    .nav-element{
+
+@media only screen and (max-width: 576px) {
+    header {
+        margin-top: 20px;
+    }
+
+    .nav-element {
         display: none;
     }
-    .nav-title{
+
+    .nav-title {
         margin-left: 0;
     }
-    .navigation-container{
+
+    .navigation-container {
         padding: 0;
         justify-content: center;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
         width: 100%;
         margin-bottom: 25px;
     }
-    .banner-section{
+
+    .banner-section {
         width: 100%;
+        margin-top: 15px;
     }
-    main{
+
+    .banner-image {
+        background-size: 90%;
+        background-position: 20px 10px;
+    }
+
+    .banner-image img {
+        width: 85%;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    main {
         height: 100%;
     }
     header {
         margin-top: 20px;
     }
+
     .banner-details {
         margin-top: 0px;
         text-align: center;
     }
-    .banner-title{
+
+    .banner-title {
         margin-top: 20px;
         font-size: 25px;
     }
-    .sponsor-items{
+    .sponsor-items {
         width: 100%;
     }
-    .sponsor-items ul{
+
+    .sponsor-items ul {
         display: flex;
         flex-wrap: wrap;
         grid-column-gap: 30px;
@@ -342,10 +367,112 @@ main {
         align-items: center;
         justify-content: center;
     }
-    .sponsor-items ul li a{
+
+    .sponsor-items ul li a {
         margin-bottom: 10px;
     }
-    .sponsor-items{
+
+    .sponsor-items {
+        border: 0;
+    }
+    .popular-collection-container {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .collection{
+        margin: 0;
+        margin-right: 10px;
+    }
+    .see-more {
+        width: 100%;
+        margin-right: 40px;
+    }
+
+    .see-container {
+        margin-top: 25px;
+    }
+
+    .feature-product-container {
+        width: 100%;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .feature-product-image img{
+        width: 85%;
+    }
+    .feature-product-details {
+        margin-bottom: 25px;
+    }
+    .footer {
+        margin-top: -25px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width: 992px) {
+    .nav-element {
+        display: none;
+    }
+
+    .nav-title {
+        margin-left: 0;
+    }
+
+    .navigation-container {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .banner-section {
+        width: 100%;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    header {
+        margin-top: 20px;
+    }
+
+    .banner-details {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .banner-title {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .sponsor-items {
+        width: 100%;
+    }
+
+    .sponsor-items ul {
+        display: flex;
+        flex-wrap: wrap;
+        grid-column-gap: 30px;
+        grid-row-gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sponsor-items ul li a {
+        margin-bottom: 10px;
+    }
+
+    .sponsor-items {
         border: 0;
     }
 
@@ -353,27 +480,33 @@ main {
         width: 100%;
         margin-top: 30px;
     }
-    .collections{
-        grid-template-columns: repeat(1,1fr);
+
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
-    .see-more{
+
+    .see-more {
         width: 100%;
         margin-right: 40px;
     }
-    .see-container{
+
+    .see-container {
         margin-top: 25px;
     }
-    .feature-product-container{
+
+    .feature-product-container {
         width: 100%;
         flex-direction: column-reverse;
         text-align: center;
         margin-top: 10px;
     }
-    .feature-product-details{
+
+    .feature-product-details {
         margin-bottom: 25px;
     }
-    .footer{
+
+    .footer {
         margin-top: 0px;
     }
 }
